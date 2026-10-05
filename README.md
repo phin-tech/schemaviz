@@ -12,15 +12,15 @@ Pick one. All give you a `schemaviz` command; check with `schemaviz doctor`.
 
 ```bash
 brew install phin-tech/tap/schemaviz                                                      # a binary, no Python
-curl -fsSL https://raw.githubusercontent.com/phin-tech/skills/main/skills/schemaviz/install.sh | sh   # the same binary, checksum-verified
-uv tool install git+https://github.com/phin-tech/skills#subdirectory=skills/schemaviz   # or pipx; needs Python 3.9+
-python3 skills/schemaviz/schemaviz.py <command>                                          # no install: standard library only
+curl -fsSL https://raw.githubusercontent.com/phin-tech/schemaviz/main/install.sh | sh   # the same binary, checksum-verified
+uv tool install git+https://github.com/phin-tech/schemaviz   # or pipx; needs Python 3.9+
+python3 schemaviz.py <command>                                          # no install: standard library only
 ```
 
 The skill (`SKILL.md`) tells the agent to use `schemaviz` when it is on the PATH and the script beside it when not:
 
 ```bash
-npx skills add phin-tech/skills --skill schemaviz     # or copy this folder into ~/.claude/skills/
+npx skills add phin-tech/schemaviz     # or copy this folder into ~/.claude/skills/
 ```
 
 ## Commands
@@ -114,3 +114,7 @@ python3 scripts/homebrew-formula.py 0.1.0 > ../homebrew-tap/Formula/schemaviz.rb
 | `scripts/homebrew-formula.py` | Writes the Homebrew formula for a release. |
 | `examples/` | Inputs and build script for the sample pages. |
 | `tests/` | Unit tests. |
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).

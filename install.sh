@@ -4,12 +4,12 @@
 #              SCHEMAVIZ_BASE_URL (override where assets are downloaded from; used by the tests)
 set -eu
 
-REPO="phin-tech/skills"
+REPO="phin-tech/schemaviz"
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local/bin}"
 
 os=$(uname -s | tr '[:upper:]' '[:lower:]')
 arch=$(uname -m)
-case "$os" in darwin | linux) ;; *) echo "schemaviz: no binary for $os. Use: uv tool install git+https://github.com/$REPO#subdirectory=skills/schemaviz" >&2; exit 1 ;; esac
+case "$os" in darwin | linux) ;; *) echo "schemaviz: no binary for $os. Use: uv tool install git+https://github.com/$REPO" >&2; exit 1 ;; esac
 case "$arch" in x86_64 | amd64) arch=x64 ;; arm64 | aarch64) arch=arm64 ;; *) echo "schemaviz: no binary for $arch" >&2; exit 1 ;; esac
 asset="schemaviz-$os-$arch"
 

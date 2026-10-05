@@ -16,7 +16,7 @@ subcommands are identical.
 
 ```
 brew install phin-tech/tap/schemaviz                                                        # a binary, no Python
-uv tool install git+https://github.com/phin-tech/skills#subdirectory=skills/schemaviz     # or pipx; more options: README.md
+uv tool install git+https://github.com/phin-tech/schemaviz     # or pipx; more options: README.md
 python <this-skill-folder>/schemaviz.py <command> ...        # no install; Python 3.9+, standard library only
 schemaviz doctor                                              # what works on this machine
 ```

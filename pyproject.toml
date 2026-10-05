@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Draw a database schema, and what a migration changed, as an interactive HTML page"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 dependencies = []
 
 [project.optional-dependencies]
