@@ -39,6 +39,22 @@
       <b>A repository, scanned</b>
       <span>dbt Labs' open-source <code>jaffle_shop</code>, drawn from its folder with real warehouse types. <code>schemaviz scan jaffle_shop_duckdb</code></span>
     </a>
+    <a class="card" href="gitlab.html">
+      <b>A big application</b>
+      <span>GitLab: 1,459 tables, 14,700 columns and 1,950 foreign keys, read from its <code>db/structure.sql</code> in under a second. <code>schemaviz sql structure.sql</code></span>
+    </a>
+    <a class="card" href="kratos.html">
+      <b>Migrations, replayed</b>
+      <span>Ory Kratos: 624 Postgres migration files applied in order to get today's schema. <code>schemaviz scan kratos</code></span>
+    </a>
+    <a class="card" href="pagila.html">
+      <b>A SQL dump</b>
+      <span>Pagila, the PostgreSQL DVD-rental sample, from a <code>pg_dump</code> of the schema. <code>schemaviz sql pagila-schema.sql</code></span>
+    </a>
+    <a class="card" href="northwind.html">
+      <b>A classic</b>
+      <span>Northwind, the trading-company sample: orders, products, suppliers, employees and territories.</span>
+    </a>
   </div>
 
   <h2>Try it</h2>
@@ -51,7 +67,12 @@ schemaviz open schema.dbml</pre>
 
   <footer>
     <a href="https://github.com/phin-tech/schemaviz">Source and docs</a>.
-    The jaffle_shop schema comes from <a href="https://github.com/dbt-labs/jaffle_shop_duckdb">dbt-labs/jaffle_shop_duckdb</a>.
+    Schemas from open-source projects, each under its own licence:
+    <a href="https://github.com/dbt-labs/jaffle_shop_duckdb">jaffle_shop</a>,
+    <a href="https://gitlab.com/gitlab-org/gitlab-foss">GitLab</a> (MIT),
+    <a href="https://github.com/ory/kratos">Ory Kratos</a> (Apache-2.0),
+    <a href="https://github.com/devrimgunduz/pagila">Pagila</a>,
+    <a href="https://github.com/pthom/northwind_psql">Northwind</a> (Ms-PL).
     The recipe app is invented for this page.
   </footer>
 </main>
