@@ -6,6 +6,10 @@ teaches an agent to drive it.
 The renderer reads only [DBML](https://dbml.dbdiagram.io), so one tool covers every framework. Exporters write DBML for
 SQLAlchemy, Django, SQL dumps, dbt projects and live databases; for anything else the agent reads the code and writes it.
 
+[![The schemaviz sample gallery: a migration diff, GitLab's 1,459 tables, Ory Kratos, Pagila, Northwind and jaffle_shop](docs/landing.png)](https://phin-tech.github.io/schemaviz/)
+
+The [live samples](https://phin-tech.github.io/schemaviz/) are real schemas, from GitLab down to a made-up recipe app.
+
 ## Install
 
 Pick one. All give you a `schemaviz` command; check with `schemaviz doctor`.
