@@ -67,7 +67,7 @@ Type respellings (`int` / `integer`) and reworded notes are not reported as chan
 
 ### Samples
 
-Live: **https://phin-tech.github.io/skills/schemaviz/**, a migration diff of an invented recipe app and the dbt project `jaffle_shop` scanned from its folder. They are rebuilt from `examples/` by `sh examples/build-site.sh <dir>`.
+Live: **https://phin-tech.github.io/schemaviz/**, a migration diff of an invented recipe app and the dbt project `jaffle_shop` scanned from its folder. They are rebuilt from `examples/` by `sh examples/build-site.sh <dir>`.
 
 ### Publishing
 
